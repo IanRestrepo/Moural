@@ -9,8 +9,8 @@ export const NavBar = () => {
     ]
 
   return (
-    <nav className=''>
-        <ul>
+    <nav className='flex justify-center py-5 text-white bg-black'>
+        <ul className='flex gap-5'>
             {
                 AppRoutes.map( route => (
                     <li key={route.path}><a href={route.path}>{route.siteName}</a></li>
