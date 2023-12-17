@@ -1,6 +1,14 @@
-import { Icon } from "@iconify/react"
+import { Icon } from '@iconify/react'
+import { useState } from 'react'
 
 export const NavBar = () => {
+
+    const [products, setProducts] = useState(0);
+    const productsInCart = products;
+
+    const productHandler = () => {
+        setProducts(products => products + 1)
+    }
 
     const Routes = [
         {path: '/', siteName: 'Home' },
@@ -32,7 +40,17 @@ export const NavBar = () => {
                 ))
             }
             <span className="flex items-center">
-            <Icon icon="solar:cart-large-2-line-duotone" /> - 0
+
+                {
+                    <div>
+                <Icon icon="solar:cart-large-2-line-duotone" /> 
+                <button onClick={productHandler}>
+                {productsInCart}
+
+                </button>
+                    </div>
+                
+                }
             </span>
 
         </ul>

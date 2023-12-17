@@ -11,7 +11,7 @@ export const Card = ({ ProductImg, ProductTitle, ProductPrice }) => {
         <small className="text-gray-500">{"$" + ProductPrice}</small>
       </section>
 
-      <button className='text-center mx-auto my-auto bg-[#C0FF0C] w-full h-full mt-2 py-3 font-extrabold uppercase cursor-pointer text-black'>Add to cart</button>
+      <button className='text-center mx-auto my-auto bg-[#C0FF0C] w-full mt-2 py-3 font-extrabold uppercase cursor-pointer text-black'>Add to cart</button>
     </div>
   );
 };

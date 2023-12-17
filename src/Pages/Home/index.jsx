@@ -4,6 +4,7 @@ import { Card } from "../../Components/Card";
 export const Home = () => {
   return (
     <MainLayout>
+      <section className='flex flex-wrap justify-center gap-5'>
       <Card
         ProductImg={
           "https://img.freepik.com/free-vector/flat-summer-night-illustration-with-beach-view_23-2149427599.jpg"
@@ -19,6 +20,7 @@ export const Home = () => {
         ProductTitle={"Showy"}
         ProductPrice={150}
       />
+      </section>
     </MainLayout>
   );
 };
